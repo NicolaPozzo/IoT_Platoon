@@ -196,6 +196,7 @@ std::unique_ptr<BaseFrame1609_4> BaseProtocol::createBeacon(int destinationAddre
     wsm->setChannelNumber(static_cast<int>(Channel::cch));
     wsm->setUserPriority(priority);
 
+    //modificated
     // create platooning beacon with data about the car
     PlatooningBeacon* pkt = new PlatooningBeacon();
     if (positionHelper->getId() == 0 && data.time > 40) {
